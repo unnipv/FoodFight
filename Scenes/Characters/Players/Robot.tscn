@@ -4,79 +4,65 @@
 
 [node name="Robot" instance=ExtResource( 1 )]
 
-[node name="RobotArmature" parent="." index="0"]
-bones/1/bound_children = [ NodePath("BoneAttachment002") ]
-bones/2/bound_children = [ NodePath("BoneAttachment011") ]
-bones/7/bound_children = [ NodePath("BoneAttachment004") ]
-bones/8/bound_children = [ NodePath("BoneAttachment009") ]
-bones/9/bound_children = [ NodePath("BoneAttachment") ]
-bones/22/bound_children = [ NodePath("BoneAttachment010") ]
-bones/23/bound_children = [ NodePath("BoneAttachment001") ]
-bones/37/bound_children = [ NodePath("BoneAttachment005") ]
-bones/38/bound_children = [ NodePath("BoneAttachment007") ]
-bones/39/bound_children = [ NodePath("BoneAttachment003") ]
-bones/41/bound_children = [ NodePath("BoneAttachment006") ]
-bones/42/bound_children = [ NodePath("BoneAttachment008") ]
-
 [node name="BoneAttachment" parent="RobotArmature" index="1"]
-transform = Transform( 0.0336137, 0.971919, -0.232902, -0.957012, 0.0984743, 0.27282, 0.288093, 0.21372, 0.933448, 0.677955, 2.8132, -0.134088 )
+transform = Transform( 0.0367191, 0.903648, -0.426698, -0.17517, 0.426195, 0.887509, 0.983853, 0.0421567, 0.173943, 0.617283, 2.33039, -0.0168433 )
 
 [node name="ArmL" parent="RobotArmature/BoneAttachment" index="0"]
 transform = Transform( -0.0656895, 0.0525771, 0.996453, 0.10077, 0.993855, -0.0457968, -0.992739, 0.0974038, -0.0705838, 0.0400112, -0.163376, 0.617577 )
 
 [node name="BoneAttachment001" parent="RobotArmature" index="2"]
-transform = Transform( 0.03312, -0.93539, 0.352062, -0.736404, 0.215321, 0.641363, -0.67573, -0.280501, -0.681694, -0.594602, 2.87936, 0.118694 )
+transform = Transform( 0.209987, -0.874529, 0.437155, -0.256283, 0.382255, 0.887807, -0.943516, -0.298464, -0.143858, -0.681735, 2.31525, -0.0168432 )
 
 [node name="ArmR" parent="RobotArmature/BoneAttachment001" index="0"]
 transform = Transform( -0.00118008, -0.0644651, -0.217693, -0.0438732, 0.213657, -0.0630322, 0.222757, 0.0417393, -0.0135677, -0.0229083, 0.00509381, -0.409791 )
 
 [node name="BoneAttachment002" parent="RobotArmature" index="3"]
-transform = Transform( -1, 2.15749e-07, -2.93496e-07, 3.46028e-07, 0.814378, -0.580334, 1.1381e-07, -0.580334, -0.814378, 0.633527, 0.911695, 0.770525 )
+transform = Transform( -1, 2.15749e-07, -2.93496e-07, 2.0612e-07, 0.999474, 0.0324216, 3.00337e-07, 0.0324217, -0.999474, 0.633527, 0.024694, -0.138034 )
 
 [node name="BoneAttachment003" parent="RobotArmature" index="4"]
-transform = Transform( -1, 1.64626e-06, -2.93496e-07, -1.62452e-06, -0.914774, 0.403965, 3.96548e-07, 0.403965, 0.914775, -0.640077, 1.71671, -1.38683 )
+transform = Transform( -1, 1.64626e-06, -2.93497e-07, 1.63588e-06, 0.999474, 0.0324217, 3.46717e-07, 0.0324215, -0.999475, -0.640076, 0.024694, -0.138034 )
 
 [node name="BoneAttachment004" parent="RobotArmature" index="7"]
-transform = Transform( 0.994921, 0.0786061, -0.0628788, -0.0651519, 0.0266935, -0.997518, -0.0767326, 0.996548, 0.0316793, 0.117991, 3.52595, -0.00794379 )
+transform = Transform( 0.997931, -0.0397531, 0.0505244, 0.052055, 0.0384582, -0.997903, 0.0377267, 0.998468, 0.0404481, -0.0171258, 3.00552, -0.0112467 )
 
 [node name="Head" parent="RobotArmature/BoneAttachment004" index="0"]
 transform = Transform( 0.999996, 0.00280534, 0.000109062, -5.63674e-05, -0.0187638, 0.999824, 0.00280694, -0.99982, -0.0187636, 0.0406179, 0.0670674, -0.335165 )
 
 [node name="BoneAttachment005" parent="RobotArmature" index="8"]
-transform = Transform( 0.919356, -0.353713, -0.172272, -0.258883, -0.873613, 0.412081, -0.296252, -0.334261, -0.894718, 0.6277, 1.98864, -0.188653 )
+transform = Transform( 0.990419, -0.129433, -0.0481404, 0.00851019, -0.290752, 0.956774, -0.137829, -0.948052, -0.286857, 0.630296, 1.50432, -0.0698895 )
 
 [node name="LegL" parent="RobotArmature/BoneAttachment005" index="0"]
 transform = Transform( 0.999981, 0.00199891, 0.00578755, 0.0060775, -0.209273, -0.977831, -0.000743445, 0.977856, -0.209281, -0.00647306, 0.187741, -0.616836 )
 
 [node name="BoneAttachment006" parent="RobotArmature" index="9"]
-transform = Transform( 0.936026, 0.329576, 0.123451, -0.344852, 0.788961, 0.50858, 0.0702176, -0.518636, 0.852121, -0.619012, 2.06833, 0.0591836 )
+transform = Transform( 0.974406, 0.212627, 0.0729703, -0.00821938, -0.290719, 0.956779, 0.224639, -0.932954, -0.281515, -0.643307, 1.50432, -0.0698895 )
 
 [node name="LegR" parent="RobotArmature/BoneAttachment006" index="0"]
 transform = Transform( 0.999981, 0.001871, 0.00586677, 0.00610587, -0.177769, -0.984027, -0.000798233, 0.984071, -0.177774, 0.00647932, 0.177481, -0.582784 )
 
 [node name="BoneAttachment007" parent="RobotArmature" index="10"]
-transform = Transform( 0.919356, -0.378557, 0.107169, -0.258883, -0.376986, 0.889321, -0.296252, -0.845346, -0.44457, 0.73296, 1.73686, 0.358026 )
+transform = Transform( 0.990419, -0.135178, 0.0282206, 0.00851034, 0.263692, 0.9646, -0.137828, -0.955099, 0.262354, 0.65971, 0.91972, 0.105382 )
 
 [node name="LowerLegL" parent="RobotArmature/BoneAttachment007" index="0"]
 transform = Transform( 0.999981, 0.00199893, 0.00578763, 0.00530049, 0.190558, -0.981655, -0.00306512, 0.981674, 0.19054, -0.00611609, -0.160538, -0.587648 )
 
 [node name="BoneAttachment008" parent="RobotArmature" index="11"]
-transform = Transform( 0.936026, 0.347025, -0.0585942, -0.344852, 0.937643, 0.0440217, 0.0702174, -0.0210266, 0.997322, -0.694442, 1.75758, -0.461468 )
+transform = Transform( 0.974406, 0.218807, -0.0515364, -0.00821947, 0.263739, 0.964582, 0.224638, -0.939473, 0.258846, -0.687892, 0.919716, 0.102118 )
 
 [node name="LowerLegR" parent="RobotArmature/BoneAttachment008" index="0"]
 transform = Transform( 0.999981, 0.0018711, 0.00586647, 0.00540191, 0.190626, -0.981623, -0.002955, 0.981662, 0.1906, 0.00647932, -0.160471, -0.587657 )
 
 [node name="BoneAttachment009" parent="RobotArmature" index="12"]
-transform = Transform( -0.918576, 0.194197, -0.344245, -0.3532, -0.0124136, 0.935466, 0.177391, 0.980883, 0.0799937, 0.649026, 2.89181, -0.127366 )
+transform = Transform( -0.911603, -1.73079e-06, -0.411072, -0.411072, -1.24425e-06, 0.911603, -2.38046e-06, 0.999999, 1.05798e-06, 0.582738, 2.407, -0.0168432 )
 
 [node name="ShoulderL" parent="RobotArmature/BoneAttachment009" index="0"]
 transform = Transform( -0.0259367, 0.999664, 4.36962e-08, -5.68434e-13, -4.37119e-08, 1, 0.999664, 0.0259367, 1.13371e-09, 0.0627744, -0.0193458, -0.139209 )
 
 [node name="BoneAttachment010" parent="RobotArmature" index="13"]
-transform = Transform( -0.85118, 0.194197, 0.487626, 0.494917, -0.0124125, 0.868851, 0.174781, 0.980884, -0.0855466, -0.544777, 2.96814, 0.109953 )
+transform = Transform( -0.898185, -1.32173e-06, 0.439616, 0.439616, -1.63913e-07, 0.898186, -1.2219e-06, 1, 4.91738e-07, -0.636816, 2.40703, -0.0168432 )
 
 [node name="ShoulderR" parent="RobotArmature/BoneAttachment010" index="0"]
 transform = Transform( -0.00985801, 0.999951, -1.1798e-06, -2.69271e-07, 1.21966e-06, 1, 0.999952, 0.0098581, 2.583e-07, -0.118316, -0.00415106, -0.0949789 )
 
 [node name="BoneAttachment011" parent="RobotArmature" index="14"]
-transform = Transform( 0.978886, 0.194199, -0.0637856, -0.0625663, -0.0124124, -0.997964, -0.194596, 0.980883, -2.05009e-08, 0.0420345, 1.92965, 0.112672 )
+transform = Transform( 1, 7.15256e-07, -5.82076e-11, -5.82076e-11, 0, -1, -7.15256e-07, 1, 4.16333e-17, 0.00205059, 1.40809, 0.112672 )

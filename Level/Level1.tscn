@@ -196,7 +196,7 @@ shape = SubResource( 4 )
 shape = SubResource( 5 )
 
 [node name="Cabinet" type="RigidBody" parent="Furniture" index="1"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -6 )
 
 [node name="kitchenCabinetCornerInner" type="MeshInstance" parent="Furniture/Cabinet" index="0"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
@@ -227,6 +227,56 @@ transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 2
 [node name="Robot" parent="Robots" index="0"]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 12, 0, -8 )
 
+[node name="RobotArmature" parent="Robots/Robot/Robot" index="0"]
+bones/1/bound_children = [ NodePath("BoneAttachment002") ]
+bones/2/bound_children = [ NodePath("BoneAttachment011") ]
+bones/7/bound_children = [ NodePath("BoneAttachment004") ]
+bones/8/bound_children = [ NodePath("BoneAttachment009") ]
+bones/9/bound_children = [ NodePath("BoneAttachment") ]
+bones/22/bound_children = [ NodePath("BoneAttachment010") ]
+bones/23/bound_children = [ NodePath("BoneAttachment001") ]
+bones/37/bound_children = [ NodePath("BoneAttachment005") ]
+bones/38/bound_children = [ NodePath("BoneAttachment007") ]
+bones/39/bound_children = [ NodePath("BoneAttachment003") ]
+bones/41/bound_children = [ NodePath("BoneAttachment006") ]
+bones/42/bound_children = [ NodePath("BoneAttachment008") ]
+
+[node name="BoneAttachment" parent="Robots/Robot/Robot/RobotArmature" index="1"]
+transform = Transform( 0.0336137, 0.971919, -0.232902, -0.957012, 0.0984743, 0.27282, 0.288093, 0.21372, 0.933448, 0.677955, 2.8132, -0.134088 )
+
+[node name="BoneAttachment001" parent="Robots/Robot/Robot/RobotArmature" index="2"]
+transform = Transform( 0.03312, -0.93539, 0.352062, -0.736404, 0.215321, 0.641363, -0.67573, -0.280501, -0.681694, -0.594602, 2.87936, 0.118694 )
+
+[node name="BoneAttachment002" parent="Robots/Robot/Robot/RobotArmature" index="3"]
+transform = Transform( -1, 2.15749e-07, -2.93496e-07, 3.46028e-07, 0.814378, -0.580334, 1.1381e-07, -0.580334, -0.814378, 0.633527, 0.911695, 0.770525 )
+
+[node name="BoneAttachment003" parent="Robots/Robot/Robot/RobotArmature" index="4"]
+transform = Transform( -1, 1.64626e-06, -2.93496e-07, -1.62452e-06, -0.914774, 0.403965, 3.96548e-07, 0.403965, 0.914775, -0.640077, 1.71671, -1.38683 )
+
+[node name="BoneAttachment004" parent="Robots/Robot/Robot/RobotArmature" index="7"]
+transform = Transform( 0.994921, 0.0786061, -0.0628788, -0.0651519, 0.0266935, -0.997518, -0.0767326, 0.996548, 0.0316793, 0.117991, 3.52595, -0.00794379 )
+
+[node name="BoneAttachment005" parent="Robots/Robot/Robot/RobotArmature" index="8"]
+transform = Transform( 0.919356, -0.353713, -0.172272, -0.258883, -0.873613, 0.412081, -0.296252, -0.334261, -0.894718, 0.6277, 1.98864, -0.188653 )
+
+[node name="BoneAttachment006" parent="Robots/Robot/Robot/RobotArmature" index="9"]
+transform = Transform( 0.936026, 0.329576, 0.123451, -0.344852, 0.788961, 0.50858, 0.0702176, -0.518636, 0.852121, -0.619012, 2.06833, 0.0591836 )
+
+[node name="BoneAttachment007" parent="Robots/Robot/Robot/RobotArmature" index="10"]
+transform = Transform( 0.919356, -0.378557, 0.107169, -0.258883, -0.376986, 0.889321, -0.296252, -0.845346, -0.44457, 0.73296, 1.73686, 0.358026 )
+
+[node name="BoneAttachment008" parent="Robots/Robot/Robot/RobotArmature" index="11"]
+transform = Transform( 0.936026, 0.347025, -0.0585942, -0.344852, 0.937643, 0.0440217, 0.0702174, -0.0210266, 0.997322, -0.694442, 1.75758, -0.461468 )
+
+[node name="BoneAttachment009" parent="Robots/Robot/Robot/RobotArmature" index="12"]
+transform = Transform( -0.918576, 0.194197, -0.344245, -0.3532, -0.0124136, 0.935466, 0.177391, 0.980883, 0.0799937, 0.649026, 2.89181, -0.127366 )
+
+[node name="BoneAttachment010" parent="Robots/Robot/Robot/RobotArmature" index="13"]
+transform = Transform( -0.85118, 0.194197, 0.487626, 0.494917, -0.0124125, 0.868851, 0.174781, 0.980884, -0.0855466, -0.544777, 2.96814, 0.109953 )
+
+[node name="BoneAttachment011" parent="Robots/Robot/Robot/RobotArmature" index="14"]
+transform = Transform( 0.978886, 0.194199, -0.0637856, -0.0625663, -0.0124124, -0.997964, -0.194596, 0.980883, -2.05009e-08, 0.0420345, 1.92965, 0.112672 )
+
 [node name="TranslationAnimation" parent="Robots/Robot" index="6"]
 autoplay = "Movement"
 playback_process_mode = 0
@@ -236,3 +286,5 @@ anims/Movement = SubResource( 1 )
 pause_mode = 2
 
 [editable path="Robots/Robot"]
+
+[editable path="Robots/Robot/Robot"]

@@ -8,7 +8,7 @@ const PROJECTILE_SPEED = 50
 func _ready():
 	food_types = file_grabber.get_files("res://Projectiles/Food_Types/")
 	randomize()
-	$Robot/RobotArmature/AnimationPlayer.get_animation("Robot_Running").set_loop(true)
+	
 
 func try_to_fire():
 	if can_fire:
@@ -30,5 +30,6 @@ func _on_Timer_timeout():
 	can_fire = true
 
 func _physics_process(delta):
+	$Robot/RobotArmature/AnimationPlayer.play("Robot_Running")
 	if $RayCast.is_colliding():
 		try_to_fire()
